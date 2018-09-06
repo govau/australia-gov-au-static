@@ -1,0 +1,40 @@
+
+version: 2
+jobs:
+  modify:
+    docker:
+      # see https://hub.docker.com/r/circleci/python/tags/
+      - image: circleci/python:3.6-jessie
+    steps:
+      - checkout
+      - run: |
+          set -e
+          sudo pip install bs4
+          sudo pip install requests
+      - run: ./modify.py
+      - persist_to_workspace:
+          root: /home/circleci/project
+          paths:
+            - .
+  deploy:
+    docker:
+      - image: govau/cf-cli
+    working_directory: /root
+    steps:
+      - attach_workspace:
+          at: /root
+      - run:
+          name: Deploying to cloud.gov.au
+          command: /root/deploy.sh
+workflows:
+  version: 2
+  modify-and-deploy:
+    jobs:
+      - modify
+      - deploy:
+          requires:
+            - modify
+          filters:
+            branches:
+              only:
+                - master
