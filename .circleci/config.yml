@@ -10,7 +10,7 @@ jobs:
       - run: |
           sudo pip install bs4
           sudo pip install requests
-      - run: ./modify.py
+      - run: ./modify.py site/www.australia.gov.au
       - run: |
           curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&version=6.32.0&source=github-rel'
           sudo dpkg -i cf-cli_amd64.deb
