@@ -1,23 +1,14 @@
 
 version: 2
 jobs:
-  modify-and-deploy:
+  deploy:
     docker:
-      # see https://hub.docker.com/r/circleci/python/tags/
-      - image: circleci/python:3.6-jessie
+      - image: govau/cf-cli
     steps:
       - checkout
-      # - run: |
-      #     sudo pip install bs4
-      #     sudo pip install requests
-      # - run: ./modify.py site/www.australia.gov.au
-      - run: |
-          curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&version=6.32.0&source=github-rel'
-          sudo dpkg -i cf-cli_amd64.deb
-          cf install-plugin https://github.com/contraband/autopilot/releases/download/0.0.7/autopilot-linux -f
-          ./deploy.sh
+      - run: ./deploy.sh
 workflows:
   version: 2
-  modify-and-deploy:
+  deploy:
     jobs:
-      - modify-and-deploy
+      - deploy
