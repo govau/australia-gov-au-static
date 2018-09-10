@@ -70,9 +70,12 @@ class HtmlFile(object):
 
 def process_recursively(directory):
     for filename in glob.iglob(directory+'/**/*.html', recursive=True):
-        process(filename)
+        processHtml(filename)
+    for filename in glob.iglob(directory+'/**/*.css', recursive=True):
+        processCss(filename)
 
-def process(filename):
+
+def processHtml(filename):
 
     # wget seems to unnecessarily add the html extension to some fonts/icons
     # which messes with our processing, so we'll just rename them to remove the
@@ -85,9 +88,28 @@ def process(filename):
         print("Renaming %s to %s" % (filename, root))
         os.rename(filename, root)
         return
+        page = HtmlFile(filename)
+        page.process()
 
-    page = HtmlFile(filename)
-    page.process()
+def processCss(filename):
+    print(filename)
+    # Read in the file
+    with open(filename, 'r', encoding='utf-8') as file:
+        filecontents = file.read()
+
+    filecontents = filecontents.replace( \
+        'ausgov.woff%3F92168388.html', \
+        'ausgov.woff%3F92168388')
+
+    with open(filename, 'w', encoding='utf-8') as file:
+        file.write(filecontents)
+
+def process(filename):
+    root, extension = os.path.splitext(filename)
+    if extension == '.html':
+        processHtml(filename)
+    elif extension == '.css':
+        processCss(filename)
 
 if __name__ == '__main__':
     try:
