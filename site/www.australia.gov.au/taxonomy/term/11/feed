@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.australia.gov.au"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>australia.gov.au - rss feed</title>
+ <link>https://www.australia.gov.au/agosp-resource-type/rss-feed</link>
+ <description>Resource is an RSS feed.</description>
+ <language>en</language>
+<item>
+ <title>rss-stay-smart-online</title>
+ <link>https://www.australia.gov.au/content/rss-stay-smart-online</link>
+ <description></description>
+ <pubDate>Fri, 19 Aug 2016 06:01:18 +0000</pubDate>
+ <dc:creator>genelle.stone</dc:creator>
+ <guid isPermaLink="false">15406 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-stay-smart-online#comments</comments>
+</item>
+<item>
+ <title>rss-treasury</title>
+ <link>https://www.australia.gov.au/content/rss-treasury</link>
+ <description></description>
+ <pubDate>Thu, 18 Aug 2016 00:14:48 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">15326 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-treasury#comments</comments>
+</item>
+<item>
+ <title>rss-tax-practitioners-board</title>
+ <link>https://www.australia.gov.au/content/rss-tax-practitioners-board</link>
+ <description></description>
+ <pubDate>Wed, 17 Aug 2016 23:59:24 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">15316 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-tax-practitioners-board#comments</comments>
+</item>
+<item>
+ <title>rss-therapeutic-goods-administration</title>
+ <link>https://www.australia.gov.au/content/rss-therapeutic-goods-administration</link>
+ <description></description>
+ <pubDate>Wed, 17 Aug 2016 06:48:48 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">15306 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-therapeutic-goods-administration#comments</comments>
+</item>
+<item>
+ <title>rss-screen-australia</title>
+ <link>https://www.australia.gov.au/content/rss-screen-australia</link>
+ <description></description>
+ <pubDate>Wed, 17 Aug 2016 06:32:44 +0000</pubDate>
+ <dc:creator>genelle.stone</dc:creator>
+ <guid isPermaLink="false">15301 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-screen-australia#comments</comments>
+</item>
+<item>
+ <title>rss-defence-reserves-support</title>
+ <link>https://www.australia.gov.au/content/rss-defence-reserves-support</link>
+ <description></description>
+ <pubDate>Fri, 05 Aug 2016 05:55:29 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">15166 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-defence-reserves-support#comments</comments>
+</item>
+<item>
+ <title>rss-comcare</title>
+ <link>https://www.australia.gov.au/content/rss-comcare</link>
+ <description></description>
+ <pubDate>Fri, 05 Aug 2016 04:50:58 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">15131 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-comcare#comments</comments>
+</item>
+<item>
+ <title>rss-public-sector-innovation-toolkit</title>
+ <link>https://www.australia.gov.au/content/rss-public-sector-innovation-toolkit</link>
+ <description></description>
+ <pubDate>Thu, 04 Aug 2016 02:12:10 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">15031 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-public-sector-innovation-toolkit#comments</comments>
+</item>
+<item>
+ <title>rss-takeovers-panel</title>
+ <link>https://www.australia.gov.au/content/rss-takeovers-panel</link>
+ <description></description>
+ <pubDate>Thu, 14 Jul 2016 04:25:32 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">14626 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-takeovers-panel#comments</comments>
+</item>
+<item>
+ <title>rss-safe-work-australia</title>
+ <link>https://www.australia.gov.au/content/rss-safe-work-australia</link>
+ <description></description>
+ <pubDate>Fri, 08 Jul 2016 01:15:04 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">14466 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/rss-safe-work-australia#comments</comments>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="https://www.australia.gov.au"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>australia.gov.au - State or territory government</title>
+ <link>https://www.australia.gov.au/agosp-tier/state-or-territory-govt</link>
+ <description>Content assets which present state or territory government information.
+</description>
+ <language>en</language>
+<item>
+ <title>registration-change-details-qld</title>
+ <link>https://www.australia.gov.au/web_resource/registration-change-details-qld</link>
+ <description>&lt;div class=&quot;field field-name-field-title field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Registration - change details (Qld)&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-sequence field-type-number-integer field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Sequence:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;999&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-language field-type-language-field field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Language:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;English&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-resource-url field-type-link-field field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Resource URL:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://www.service.transport.qld.gov.au/changeofaddressQt/public/Welcome.xhtml?windowId=799&amp;amp;dswid=801&quot;&gt;Registration - change details (Qld)&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-creator field-type-entityreference field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Creator:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/directories/qld/tmrqld&quot;&gt;dept-of-transport-and-main-roads-qld&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-publisher field-type-entityreference field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Publisher:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/directories/qld/tmrqld&quot;&gt;dept-of-transport-and-main-roads-qld&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-seedlist field-type-list-boolean field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Seedlist:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Excluded&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-description field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Description:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;You can notify the Queensland Department of Transport and Main Roads about changes to your address or third party details online, by phone or mail, or by visiting in person.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-audience field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Audience:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-interests/all&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;All&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-document-type field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Document type:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-document-type/other&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;other&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-jurisdiction field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Jurisdiction:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agls-jurisdiction/australia&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Australia&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-navigation-category field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Navigation Category:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/information-and-services/family-and-community/change-my-address/queensland&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Queensland&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-resource-type field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Resource type:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-resource-type/web-resource&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;web resource&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tier-of-government field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tier of government:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-tier/state-or-territory-govt&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;State or territory government&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-website-type field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Website type:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-website-type/none&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;none&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 02 Jan 2018 01:11:47 +0000</pubDate>
+ <dc:creator>michael.tran</dc:creator>
+ <guid isPermaLink="false">15696 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/web_resource/registration-change-details-qld#comments</comments>
+</item>
+<item>
+ <title>land-and-property-information-nsw</title>
+ <link>https://www.australia.gov.au/directories/nsw/lpinsw</link>
+ <description></description>
+ <pubDate>Wed, 01 Jun 2016 05:01:46 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">12441 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/directories/nsw/lpinsw#comments</comments>
+</item>
+<item>
+ <title>dept-of-human-services-sa</title>
+ <link>https://www.australia.gov.au/directories/sa/dcsi</link>
+ <description></description>
+ <pubDate>Tue, 15 Mar 2016 23:07:17 +0000</pubDate>
+ <dc:creator>matthew.parry</dc:creator>
+ <guid isPermaLink="false">11726 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/directories/sa/dcsi#comments</comments>
+</item>
+<item>
+ <title>bluebays-app</title>
+ <link>https://www.australia.gov.au/content/bluebays-app</link>
+ <description>&lt;div class=&quot;field field-name-field-title field-type-text field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Title:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;BlueBays&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-resource-url field-type-link-field field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Resource URL:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://play.google.com/store/apps/details?id=com.dcsi.bluebays&quot;&gt;Android&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;https://itunes.apple.com/au/app/bluebays/id1050848001?mt=8&quot;&gt;iOS&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-creator field-type-entityreference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Creator:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;dept-of-human-services-sa&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tier-of-government field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Tier of government:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-tier/state-or-territory-govt&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;State or territory government&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-jurisdiction field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Jurisdiction:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agls-jurisdiction/sa&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;SA&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-audience field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Audience:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-interests/all&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;All&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;/agosp-interests/families&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Families&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-sequence field-type-number-integer field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Sequence:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;999&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-resource-type field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Resource type:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-resource-type/app&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;app&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-collection-facet field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Collection facet:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agosp-collection-facet/service&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Service&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-description field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Description:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Displays the location of metered and not-metered disability car park spaces worldwide.You can collect, map and share the locations, park level and space size of disability car parking spaces that you visit.&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-navigation-category field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Navigation Category:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/information-and-services/benefits-and-payments/people-with-disability&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;People with disability&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-folder field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Folder:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/folder/resources-apps-store-links&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;resources-apps store links&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-review-date field-type-datetime field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Review Date:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;span class=&quot;date-display-single&quot; property=&quot;dc:date&quot; datatype=&quot;xsd:dateTime&quot; content=&quot;2016-12-10T00:00:00+11:00&quot;&gt;Saturday, December 10, 2016 - 12:00am&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-current-revision-state field-type-text field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Current Revision State:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;published&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-language field-type-language-field field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Language:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;English&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-media-category field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Media Category:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agp-media-category/family-and-community&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Family and community&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-platform field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Platform:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/agp-platform/android&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Android&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;/agp-platform/ios&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;iOS&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Tue, 15 Mar 2016 05:14:34 +0000</pubDate>
+ <dc:creator>matthew.parry</dc:creator>
+ <guid isPermaLink="false">11696 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/bluebays-app#comments</comments>
+</item>
+<item>
+ <title>statutory-declarations</title>
+ <link>https://www.australia.gov.au/content/statutory-declarations</link>
+ <description></description>
+ <pubDate>Fri, 13 Feb 2015 04:10:55 +0000</pubDate>
+ <dc:creator>matthew.parry</dc:creator>
+ <guid isPermaLink="false">6186 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/statutory-declarations#comments</comments>
+</item>
+<item>
+ <title>health-and-wellbeing-states-and-territories</title>
+ <link>https://www.australia.gov.au/content/health-and-wellbeing-states-and-territories</link>
+ <description></description>
+ <pubDate>Fri, 19 Sep 2014 06:00:11 +0000</pubDate>
+ <dc:creator>matthew.parry</dc:creator>
+ <guid isPermaLink="false">5915 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/health-and-wellbeing-states-and-territories#comments</comments>
+</item>
+<item>
+ <title>jobs-and-workplace-states-and-territories</title>
+ <link>https://www.australia.gov.au/content/jobs-and-workplace-states-and-territories</link>
+ <description></description>
+ <pubDate>Fri, 19 Sep 2014 02:27:24 +0000</pubDate>
+ <dc:creator>matthew.parry</dc:creator>
+ <guid isPermaLink="false">5914 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/jobs-and-workplace-states-and-territories#comments</comments>
+</item>
+<item>
+ <title>official-tourist-sites</title>
+ <link>https://www.australia.gov.au/content/official-tourist-sites</link>
+ <description></description>
+ <pubDate>Thu, 18 Sep 2014 01:27:04 +0000</pubDate>
+ <dc:creator>matthew.parry</dc:creator>
+ <guid isPermaLink="false">5913 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/official-tourist-sites#comments</comments>
+</item>
+<item>
+ <title>youth-sites-states-and-territories</title>
+ <link>https://www.australia.gov.au/content/youth-sites-states-and-territories</link>
+ <description></description>
+ <pubDate>Fri, 12 Sep 2014 05:00:26 +0000</pubDate>
+ <dc:creator>genelle.stone</dc:creator>
+ <guid isPermaLink="false">5906 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/youth-sites-states-and-territories#comments</comments>
+</item>
+<item>
+ <title>business-states-and-territories</title>
+ <link>https://www.australia.gov.au/content/business-states-and-territories</link>
+ <description></description>
+ <pubDate>Thu, 21 Aug 2014 02:36:18 +0000</pubDate>
+ <dc:creator>glenys.gould</dc:creator>
+ <guid isPermaLink="false">5892 at https://www.australia.gov.au</guid>
+ <comments>https://www.australia.gov.au/content/business-states-and-territories#comments</comments>
+</item>
+</channel>
+</rss>
