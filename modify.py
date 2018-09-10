@@ -104,4 +104,4 @@ if __name__ == '__main__':
             process(arg)
     except IndexError:
         print("Please specify file or directory to modify")
-        pass
+        exit(1)
