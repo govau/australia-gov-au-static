@@ -1,4 +1,6 @@
-# australia-gov-au-static
+# australia-gov-au-static 
+
+[![CircleCI](https://circleci.com/gh/govau/australia-gov-au-static.svg?style=svg)](https://circleci.com/gh/govau/australia-gov-au-static)
 
 Static site for www.australia.gov.au.
 
@@ -11,6 +13,10 @@ wget in the included docker image was used to download the old site using the [d
 [modify.py](./modify.py) was used to tweak the downloaded files to fix up issues and convert the site to static.
 
 Originally it was thought that modify.py could be run in CI against the repo, and the output deployed (and not checked in). However this approach was too slow, so now the changes should be committed into the repo, and CI will just deploy what is in the repo.
+
+## Circle CI
+
+CI will deploy the latest changes in the repo to cloud.gov.au.
 
 ## Issues in progress
 
