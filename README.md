@@ -8,7 +8,9 @@ wget in the included docker image was used to download the old site using the [d
 
 ## Modify the html
 
-[modify.py](./modify.py) is used to tweak the downloaded files to fix up issues and convert the site to static.
+[modify.py](./modify.py) was used to tweak the downloaded files to fix up issues and convert the site to static.
+
+Originally it was thought that modify.py could be run in CI against the repo, and the output deployed (and not checked in). However this approach was too slow, so now the changes should be committed into the repo, and CI will just deploy what is in the repo.
 
 ## Issues in progress
 
