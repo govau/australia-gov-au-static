@@ -58,7 +58,7 @@ class HtmlFile(object):
         if self.filechanged:
             print('Writing out changed %s' % self.filename)
             with open(self.filename, 'w', encoding='utf-8') as file:
-                file.write(str(soup))
+                file.write(str(self.soup))
         else:
             print('No changes in %s' % self.filename)
 
