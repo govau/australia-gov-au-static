@@ -24,7 +24,7 @@ class HtmlFile(object):
         # destination
         for anchor in self.soup.find_all('a'):
             href = anchor.get('href')
-            if href.startswith('http://www.australia.gov.au'):
+            if href != None and href.startswith('http://www.australia.gov.au'):
                 r = requests.get(href, timeout=REQUESTS_TIMEOUT)
                 if not r.url.startswith('https://www.australia.gov.au'):
                     print('Replacing %s with %s' % (href, r.url))
@@ -73,6 +73,19 @@ def process_recursively(directory):
         process(filename)
 
 def process(filename):
+
+    # wget seems to unnecessarily add the html extension to some fonts/icons
+    # which messes with our processing, so we'll just rename them to remove the
+    # html
+    root, extension = os.path.splitext(filename)
+    if '.eot?' in filename or \
+            '.ttf?' in filename or \
+            '.woff?' in filename:
+        # Rename to remove the extension
+        print("Renaming %s to %s" % (filename, root))
+        os.rename(filename, root)
+        return
+
     page = HtmlFile(filename)
     page.process()
 
@@ -84,5 +97,5 @@ if __name__ == '__main__':
         else:
             process(arg)
     except IndexError:
-        print("Please specify file or directory to modify")
+        print("Please specify file or directory to scan")
         exit(1)
