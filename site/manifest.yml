@@ -1,7 +1,8 @@
 ---
 applications:
 - name: www.australia.gov.au
-  buildpack: staticfile_buildpack
+  buildpacks:
+  - staticfile_buildpack
   memory: 64M
   disk_quota: 1G
   path: www.australia.gov.au
