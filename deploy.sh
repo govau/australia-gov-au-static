@@ -27,7 +27,10 @@ login() {
 main() {
   login
   cd site
-  cf zero-downtime-push original-ausgov -f manifest.yml
+  # while iterating, its faster to use cf push so we get buildpack caching
+  # if uptime becomes more important, change to zero-downtime-push
+  cf push original-ausgov -f manifest.yml
+  #cf zero-downtime-push original-ausgov -f manifest.yml
 }
 
 main $@
