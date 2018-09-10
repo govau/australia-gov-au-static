@@ -28,7 +28,7 @@ login() {
 }
 
 main() {
-  login
+
   cd site
 
   # while iterating, its faster to use cf push so we get buildpack caching
@@ -37,12 +37,14 @@ main() {
 
   case "${GITBRANCH}" in
     master)
+    login
       cf push original-ausgov -f manifest.yml
       ;;
 
     *)
       # uncomment this if you want to push this branch as a separate app
       # Remember to delete the app on cloud.gov.au when you are done
+      # login
       # cf push original-ausgov-`basename \"${GITBRANCH}\"` -f manifest.yml
       ;;
   esac
