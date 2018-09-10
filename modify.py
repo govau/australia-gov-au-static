@@ -69,8 +69,8 @@ class HtmlFile(object):
         # print(document)
 
 def process_recursively(directory):
-    # for filename in glob.iglob(directory+'/**/*.html', recursive=True):
-    #     processHtml(filename)
+    for filename in glob.iglob(directory+'/**/*.html', recursive=True):
+        processHtml(filename)
     for filename in glob.iglob(directory+'/**/*.css', recursive=True):
         processCss(filename)
 
@@ -107,10 +107,10 @@ def processCss(filename):
 def process(filename):
     root, extension = os.path.splitext(filename)
     if extension == '.html':
-        processHtml
+        processHtml(filename)
     elif extension == '.css':
-        processCss
-        
+        processCss(filename)
+
 if __name__ == '__main__':
     try:
         arg = sys.argv[1]
