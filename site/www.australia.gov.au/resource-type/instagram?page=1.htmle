@@ -54,7 +54,7 @@
     <script type="text/javascript" src="../profiles/gsecms/themes/ausgovau_bootstrap/javascripts/vendor/jquery.min.js"></script>
 <script type="text/javascript" src="../misc/jquery.once.js"></script>
 <script type="text/javascript" src="../misc/drupal.js"></script>
-<script type="text/javascript" src="../misc/jquery.cookie.js%3Fv=1.0"></script>
+<script type="text/javascript" src="../misc/jquery.cookie.js"></script>
 <script type="text/javascript" src="../misc/jquery.form.js%3Fv=2.52"></script>
 <script type="text/javascript" src="../misc/ajax.js%3Fv=7.59"></script>
 <script type="text/javascript" src="../profiles/gsecms/modules/contrib/absolute_messages/absolute_messages.js"></script>
