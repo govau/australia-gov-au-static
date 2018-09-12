@@ -24,7 +24,7 @@ class HtmlFile(object):
         # destination
         for anchor in self.soup.find_all('a'):
             href = anchor.get('href')
-            if href != None and href.startswith('http://www.australia.gov.au'):
+            if href != None and href.startswith('https://www.australia.gov.au'):
                 r = requests.get(href, timeout=REQUESTS_TIMEOUT)
                 if not r.url.startswith('https://www.australia.gov.au'):
                     print('Replacing %s with %s' % (href, r.url))

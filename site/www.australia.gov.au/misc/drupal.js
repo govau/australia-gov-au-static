@@ -9,7 +9,7 @@ jQuery.noConflict();
 /**
  * Override jQuery.fn.init to guard against XSS attacks.
  *
- * See http://bugs.jquery.com/ticket/9521
+ * See https://bugs.jquery.com/ticket/9521
  */
 var jquery_init = $.fn.init;
 $.fn.init = function (selector, context, rootjQuery) {
@@ -519,7 +519,7 @@ Drupal.displayAjaxError = function (message) {
   // Skip displaying the message if the user deliberately aborted (for example,
   // by reloading the page or navigating to a different page) while the Ajax
   // request was still ongoing. See, for example, the discussion at
-  // http://stackoverflow.com/questions/699941/handle-ajax-error-when-a-user-clicks-refresh.
+  // https://stackoverflow.com/questions/699941/handle-ajax-error-when-a-user-clicks-refresh.
   if (!Drupal.beforeUnloadCalled) {
     alert(message);
   }

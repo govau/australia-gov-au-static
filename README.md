@@ -22,9 +22,9 @@ CI will deploy the latest changes in the repo to cloud.gov.au.
 
 ### http?
 
-Can we configure drupal to use https links rather than e.g. http://www.australia.gov.au/bowelscreening? This seems to confuse wget as it follows the 301 to:
+Can we configure drupal to use https links rather than e.g. https://www.australia.gov.au/bowelscreening? This seems to confuse wget as it follows the 301 to:
 - https://www.australia.gov.au/bowelscreening
-- http://www.cancerscreening.gov.au/internet/screening/publishing.nsf/Content/bowel-campaign-home
+- https://www.cancerscreening.gov.au/internet/screening/publishing.nsf/Content/bowel-campaign-home
 And downloads the contents of the final site. i.e. it seems to ignore the domains
 For now dealing with this with --max-redirect 0 and in modify.py
 
