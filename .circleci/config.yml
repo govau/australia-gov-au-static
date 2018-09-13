@@ -9,7 +9,8 @@ jobs:
           name: Deploying to cloud.gov.au
           command: |
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
-            cf zero-downtime-push ausgov -f ../site/stag_manifest.yml
+            cd site
+            cf zero-downtime-push original-ausgov -f stag_manifest.yml
   deploy-prod:
     docker:
       - image: govau/cf-cli
@@ -19,7 +20,8 @@ jobs:
           name: Deploying to cloud.gov.au
           command: |
             cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
-            cf zero-downtime-push ausgov -f ../site/prod_manifest.yml
+            cd site
+            cf zero-downtime-push original-ausgov -f prod_manifest.yml
 workflows:
   version: 2
   deploy:
