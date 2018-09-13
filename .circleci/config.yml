@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Deploying to cloud.gov.au
           command: |
-            cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_PROD_USER -p $CF_PASSWORD_PROD
+            cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
             cf zero-downtime-push ausgov -f ../site/prod_manifest.yml
 workflows:
   version: 2
