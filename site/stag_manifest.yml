@@ -1,0 +1,8 @@
+---
+applications:
+- name: www.test.australia.gov.au
+  buildpacks:
+  - staticfile_buildpack
+  memory: 64M
+  disk_quota: 1G
+  path: www.test.australia.gov.au

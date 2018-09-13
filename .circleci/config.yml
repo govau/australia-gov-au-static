@@ -1,14 +1,36 @@
-
 version: 2
 jobs:
-  deploy:
+  deploy-staging:
     docker:
       - image: govau/cf-cli
     steps:
       - checkout
-      - run: ./deploy.sh
+      - run:
+          name: Deploying to cloud.gov.au
+          command: |
+            cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
+            cf zero-downtime-push ausgov -f ../site/stag_manifest.yml
+  deploy-prod:
+    docker:
+      - image: govau/cf-cli
+    steps:
+      - checkout
+      - run:
+          name: Deploying to cloud.gov.au
+          command: |
+            cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_PROD_USER -p $CF_PASSWORD_PROD
+            cf zero-downtime-push ausgov -f ../site/prod_manifest.yml
 workflows:
   version: 2
   deploy:
     jobs:
-      - deploy
+      - deploy-staging:
+          filters:
+            branches:
+              only:
+                - develop
+      - deploy-prod:
+          filters:
+            branches:
+              only:
+                - master
