@@ -5,3 +5,4 @@ applications:
   memory: 128M
   disk_quota: 1G
   path: www.australia.gov.au
+  instances: 2
