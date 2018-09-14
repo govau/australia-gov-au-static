@@ -1,6 +1,6 @@
 ---
 applications:
-- name: www.australia.gov.au
+- name: original-ausgov
   buildpack: staticfile_buildpack
   memory: 128M
   disk_quota: 1G

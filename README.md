@@ -6,7 +6,9 @@ Static site for www.australia.gov.au.
 
 ## Download the old site
 
-wget in the included docker image was used to download the old site using the [download.sh](./download.sh) script.
+`wget` in the included docker image was used to download the old site using the [download.sh](./download.sh) script.
+
+## Modifications
 
 ## Modify the html
 
@@ -14,28 +16,7 @@ wget in the included docker image was used to download the old site using the [d
 
 Originally it was thought that modify.py could be run in CI against the repo, and the output deployed (and not checked in). However this approach was too slow, so now the changes should be committed into the repo, and CI will just deploy what is in the repo.
 
-## Circle CI
+## Deployment
 
-CI will deploy the latest changes in the repo to cloud.gov.au.
-
-## Issues in progress
-
-### http?
-
-Can we configure drupal to use https links rather than e.g. https://www.australia.gov.au/bowelscreening? This seems to confuse wget as it follows the 301 to:
-- https://www.australia.gov.au/bowelscreening
-- https://www.cancerscreening.gov.au/internet/screening/publishing.nsf/Content/bowel-campaign-home
-And downloads the contents of the final site. i.e. it seems to ignore the domains
-For now dealing with this with --max-redirect 0 and in modify.py
-
-### Just remove all search bars?
-
-- site search
-- https://www.australia.gov.au/news-and-social-media/social-media/rss-feeds
-- https://www.australia.gov.au/information-and-services/a-z-of-government-services
-
-### The shortlinks seem to cause problems with get
-
-- can we just remove them in modify.py?
-
-### Upcoming public holiday on home page?
+CI watches for changes in the `develop` branch and pushes to to: https://original-ausgov.apps.y.cld.gov.au/. 
+The `master` branch deploys to: https://www.australia.gov.au whenever the CDN refreshes its cache, presumably 3600 seconds.

@@ -10,6 +10,7 @@ jobs:
           command: |
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
             cd site
+            cp stag_nginx.conf www.australia.gov.au/nginx.conf
             cf zero-downtime-push original-ausgov -f stag_manifest.yml
   deploy-prod:
     docker:
@@ -21,6 +22,7 @@ jobs:
           command: |
             cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
             cd site
+            cp prod_nginx.conf www.australia.gov.au/nginx.conf
             cf zero-downtime-push original-ausgov -f prod_manifest.yml
 workflows:
   version: 2
