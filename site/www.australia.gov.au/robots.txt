@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /information-and-services/
-Disallow: /information-and-services
