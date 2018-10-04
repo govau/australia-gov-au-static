@@ -1,7 +1,7 @@
 ---
 applications:
 - name: original-ausgov
-  buildpack: staticfile_buildpack
+  buildpack: nginx_buildpack
   memory: 128M
   disk_quota: 1G
   path: www.australia.gov.au
