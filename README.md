@@ -18,5 +18,5 @@ Originally it was thought that modify.py could be run in CI against the repo, an
 
 ## Deployment
 
-CI watches for changes in the `develop` branch and pushes to to: https://original-ausgov.apps.y.cld.gov.au/. 
+CI watches for changes in the `develop` branch and pushes to: https://original-ausgov.apps.y.cld.gov.au/. 
 The `master` branch deploys to: https://www.australia.gov.au whenever the CDN refreshes its cache, presumably 3600 seconds.
