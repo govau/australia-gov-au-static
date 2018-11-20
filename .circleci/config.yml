@@ -33,6 +33,7 @@ workflows:
             branches:
               only:
                 - develop
+                - /infoupdate\/.*/
       - deploy-prod:
           filters:
             branches:
