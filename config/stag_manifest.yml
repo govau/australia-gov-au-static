@@ -2,7 +2,7 @@
 applications:
 - name: original-ausgov
   buildpack: nginx_buildpack
-  memory: 64M
+  memory: 128M
   disk_quota: 1G
   path: .
   instances: 1
