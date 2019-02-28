@@ -10,7 +10,7 @@ jobs:
           command: |
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
             cp config/stag_nginx.conf site/nginx.conf
-            cp config/stag_manifest.conf site/manifest.conf
+            cp config/stag_manifest.yml site/manifest.yml
             cp config/buildpack.yml site/buildpack.yml
             cd site
             cf zero-downtime-push original-ausgov -f manifest.yml
@@ -24,7 +24,7 @@ jobs:
           command: |
             cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
             cp config/prod_nginx.conf site/nginx.conf
-            cp config/prod_manifest.conf site/manifest.conf
+            cp config/prod_manifest.yml site/manifest.yml
             cp config/buildpack.yml site/buildpack.yml
             cd site
             cf zero-downtime-push original-ausgov -f manifest.yml
