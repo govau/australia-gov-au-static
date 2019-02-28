@@ -4,5 +4,5 @@ applications:
   buildpack: nginx_buildpack
   memory: 128M
   disk_quota: 1G
-  path: www.australia.gov.au
-  instances: 2
+  path: .
+  instances: 1
