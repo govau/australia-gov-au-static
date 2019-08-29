@@ -1,5 +1,8 @@
 {
-	"name": "My app",
+	"name" : "Australian Government",
+  "short_name": "australia.gov.au",
+  "start_url" : "/?utm_source=pwa",
+  "display" : "browser",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
