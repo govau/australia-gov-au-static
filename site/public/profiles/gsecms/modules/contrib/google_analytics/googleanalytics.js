@@ -2,6 +2,8 @@
 
   Drupal.googleanalytics = {};
 
+  Drupal.googleanalytics.trackDownloadExtensions = "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip";
+
   $(document).ready(function() {
 
     // Attach mousedown, keyup, touchstart events to document only and catch
@@ -11,6 +13,7 @@
       // Catch the closest surrounding link of a clicked element.
       $(event.target).closest("a,area").each(function() {
 
+        console.log("isInternal:"+Drupal.googleanalytics.isInternal(this.href));
         // Is the clicked URL internal?
         if (Drupal.googleanalytics.isInternal(this.href)) {
           // Is the file extension configured for download tracking?
@@ -42,6 +45,8 @@
               "transport": "beacon"
             });
           } else if (this.href.match(/^\w+:\/\//i)) {
+            console.log("isExternal:true");
+
             // External link clicked / No top-level cross domain clicked.
             ga("send", {
               "hitType": "event",
