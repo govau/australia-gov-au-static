@@ -14,7 +14,7 @@
         // Is the clicked URL internal?
         if (Drupal.googleanalytics.isInternal(this.href)) {
           // Is the file extension configured for download tracking?
-          else if (Drupal.googleanalytics.isDownload(this.href)) {
+          if (Drupal.googleanalytics.isDownload(this.href)) {
             // Download link clicked.
             ga("send", {
               "hitType": "event",
