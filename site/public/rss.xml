@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xml:base="https://www.australia.gov.au"  xmlns:dc="https://purl.org/dc/elements/1.1/">
-<channel>
- <title>australia.gov.au</title>
- <link>https://www.australia.gov.au</link>
- <description></description>
- <language>en</language>
-<item>
- <title>Feedback</title>
- <link>https://www.australia.gov.au/content/feedback</link>
- <description></description>
- <pubDate>Mon, 22 Jun 2015 04:36:46 +0000</pubDate>
- <dc:creator>glenys.gould</dc:creator>
- <guid isPermaLink="false">8716 at https://www.australia.gov.au</guid>
- <comments>https://www.australia.gov.au/content/feedback#comments</comments>
-</item>
-<item>
- <title>Contact us</title>
- <link>https://www.australia.gov.au/content/contact-us</link>
- <description></description>
- <pubDate>Thu, 16 May 2013 00:15:25 +0000</pubDate>
- <dc:creator>genelle.stone</dc:creator>
- <guid isPermaLink="false">5493 at https://www.australia.gov.au</guid>
- <comments>https://www.australia.gov.au/content/contact-us#comments</comments>
-</item>
-</channel>
+<rss version="2.0" xml:base="https://www.australia.gov.au" xmlns:dc="https://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>australia.gov.au</title>
+    <link>https://www.australia.gov.au</link>
+    <description></description>
+    <language>en</language>
+    <item>
+      <title>Feedback</title>
+      <link>https://www.australia.gov.au/content/feedback</link>
+      <description></description>
+      <pubDate>Mon, 22 Jun 2015 04:36:46 +0000</pubDate>
+      <dc:creator>glenys.gould</dc:creator>
+      <guid isPermaLink="false">8716 at https://www.australia.gov.au</guid>
+      <comments>https://www.australia.gov.au/content/feedback#comments</comments>
+    </item>
+    <item>
+      <title>Contact us</title>
+      <link>https://www.australia.gov.au/content/contact-us</link>
+      <description></description>
+      <pubDate>Thu, 16 May 2013 00:15:25 +0000</pubDate>
+      <dc:creator>genelle.stone</dc:creator>
+      <guid isPermaLink="false">5493 at https://www.australia.gov.au</guid>
+      <comments>https://www.australia.gov.au/content/contact-us#comments</comments>
+    </item>
+  </channel>
 </rss>
