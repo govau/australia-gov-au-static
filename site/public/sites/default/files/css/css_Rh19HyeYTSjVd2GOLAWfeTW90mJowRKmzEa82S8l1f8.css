@@ -9982,14 +9982,15 @@ body.front .menu-block-wrapper.menu-name-main-menu .row-fluid .leaf {
 
 @media screen and (min-width:550px) {
   body.front .menu-block-wrapper.menu-name-main-menu .row-fluid .leaf {
-    width: 50% !important
-    min-height: 20em;
+    width: 100% !important
   }
 }
 
 @media screen and (min-width:768px) {
   body.front .menu-block-wrapper.menu-name-main-menu .row-fluid .leaf {
     width: 33.3% !important
+    min-height: 20em;
+
   }
 }
 
