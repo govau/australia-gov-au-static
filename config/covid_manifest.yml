@@ -1,0 +1,8 @@
+---
+applications:
+- name: covid-ausgov
+  buildpack: nginx_buildpack
+  memory: 128M
+  disk_quota: 1G
+  path: .
+  instances: 1

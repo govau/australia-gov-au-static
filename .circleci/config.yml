@@ -1,5 +1,19 @@
 version: 2
 jobs:
+  deploy-covid:
+    docker:
+      - image: govau/cf-cli
+    steps:
+      - checkout
+      - run:
+          name: Deploying to cloud.gov.au
+          command: |
+            cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
+            cp config/covid_manifest.yml site/manifest.yml
+            cp site/covid_nginx.conf site/nginx.conf
+            echo ${BASIC_AUTH} | base64 --decode > site/.htpasswd
+            cd site
+            cf zero-downtime-push covid-ausgov -f manifest.yml
   deploy-staging:
     docker:
       - image: govau/cf-cli
@@ -28,6 +42,11 @@ workflows:
   version: 2
   deploy:
     jobs:
+      - deploy-covid:
+          filters:
+            branches:
+              only:
+                - covid-update
       - deploy-staging:
           filters:
             branches:
