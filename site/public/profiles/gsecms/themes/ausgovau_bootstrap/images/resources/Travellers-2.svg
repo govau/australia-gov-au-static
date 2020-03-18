@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.3%" y="-6.4%" width="110.7%" height="112.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="01-Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="D-01-00-SA_Home-page" transform="translate(-427.000000, -1376.000000)" stroke="#0073EC" stroke-width="1.5">
+            <g id="Info-for-travellers" transform="translate(0.000000, 1215.000000)">
+                <g id="Corousel-02-Copy" transform="translate(97.000000, 145.000000)">
+                    <g id="Tiles-/-Application-/-Default-Copy" transform="translate(315.000000, 0.000000)">
+                        <g id="Group-11-Copy-5" filter="url(#filter-1)">
+                            <g id="Group" transform="translate(21.000000, 20.000000)">
+                                <g id="Regular">
+                                    <circle id="Oval" cx="6" cy="3.75" r="3"></circle>
+                                    <path d="M10.555,10.888 C9.37079327,8.82508877 6.94778608,7.81586028 4.64930137,8.42816442 C2.35081666,9.04046855 0.750999966,11.121356 0.75,13.5 L0.75,15.75 L3,15.75 L3.75,23.25 L8.25,23.25 L8.573,20.017" id="Shape"></path>
+                                    <circle id="Oval" cx="17.25" cy="17.25" r="6"></circle>
+                                    <line x1="13.008" y1="21.491" x2="21.492" y2="13.008" id="Shape"></line>
+                                    <circle id="Oval" cx="16.496" cy="3.375" r="2.625"></circle>
+                                    <path d="M20.392,9 C19.6655596,7.7430869 18.3773627,6.91383538 16.9324715,6.77299617 C15.4875803,6.63215697 14.0634926,7.1970315 13.108,8.29" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

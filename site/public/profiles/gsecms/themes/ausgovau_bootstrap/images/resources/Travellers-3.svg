@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.3%" y="-6.4%" width="110.7%" height="112.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="01-Public" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="D-01-00-SA_Home-page" transform="translate(-743.000000, -1376.000000)" stroke="#0073EC" stroke-width="1.5">
+            <g id="Info-for-travellers" transform="translate(0.000000, 1215.000000)">
+                <g id="Corousel-02-Copy" transform="translate(97.000000, 145.000000)">
+                    <g id="Tiles-/-Application-/-Default-Copy-2" transform="translate(630.000000, 0.000000)">
+                        <g id="Group-11-Copy-5" filter="url(#filter-1)">
+                            <g id="Group" transform="translate(23.000000, 20.000000)">
+                                <g id="travel-man-luggage">
+                                    <circle id="Oval" cx="5.746" cy="3.748" r="3"></circle>
+                                    <path d="M11,13.5 C11,10.6005051 8.64949494,8.25 5.75,8.25 C2.85050506,8.25 0.5,10.6005051 0.5,13.5 L0.5,15.75 L2.75,15.75 L3.5,23.25 L8,23.25 L8.75,15.75 L11,15.75 L11,13.5 Z" id="Shape"></path>
+                                    <path d="M14.746,20.249 L14.746,12 L20,12 C20.8284271,12 21.5,12.6715729 21.5,13.5 L21.5,20.25 C21.5,21.0784271 20.8284271,21.75 20,21.75 L16.25,21.75" id="Shape"></path>
+                                    <circle id="Oval" cx="14.746" cy="21.748" r="1.5"></circle>
+                                    <line x1="14.746" y1="5.998" x2="14.746" y2="11.998" id="Shape"></line>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
