@@ -1,13 +1,32 @@
 version: 2
 jobs:
+  generate-meta-time:
+    docker:
+      - image: circleci/node:10.15.0
+    working_directory: ~/ausgov
+    steps:
+      - checkout
+      - run:
+          name: Add meta time tag
+          command: npm run build
+      - persist_to_workspace:
+                root: ~/ausgov
+                paths:
+                  - site/
+                  - config/
+                  - pure-cache.sh
+                  - download.sh
+
   deploy-staging:
     docker:
       - image: govau/cf-cli
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/ausgov
       - run:
           name: Deploying to cloud.gov.au
           command: |
+            cd ~/ausgov
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
             cp config/stag_manifest.yml site/manifest.yml
             cd site
@@ -19,10 +38,12 @@ jobs:
     docker:
       - image: govau/cf-cli
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/ausgov
       - run:
           name: Deploying to cloud.gov.au
           command: |
+            cd ~/ausgov
             cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
             cp config/prod_manifest.yml site/manifest.yml
             cd site
@@ -34,13 +55,18 @@ workflows:
   version: 2
   deploy:
     jobs:
+      - generate-meta-time
       - deploy-staging:
+          requires:
+            - generate-meta-time
           filters:
             branches:
               only:
                 - develop
                 - /infoupdate\/.*/
       - deploy-prod:
+          requires:
+            - generate-meta-time
           filters:
             branches:
               only:
