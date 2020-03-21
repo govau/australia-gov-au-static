@@ -14,7 +14,7 @@ jobs:
             cf zero-downtime-push original-ausgov -f manifest.yml
       - run:
           name: Purging Fastly cache
-          command: sh purge-cache.sh $FASTLY_URL_STAGING
+          command: bash purge-cache.sh $FASTLY_URL_STAGING
   deploy-prod:
     docker:
       - image: govau/cf-cli
@@ -29,7 +29,7 @@ jobs:
             cf zero-downtime-push original-ausgov -f manifest.yml
       - run:
           name: Purging Fastly cache
-          command: sh purge-cache.sh $FASTLY_URL_PROD
+          command: bash purge-cache.sh $FASTLY_URL_PROD
 workflows:
   version: 2
   deploy:
