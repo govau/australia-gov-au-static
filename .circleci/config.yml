@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Add date meta data
+          command: bash meta-date.sh
+      - run:
           name: Deploying to cloud.gov.au
           command: |
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
@@ -20,6 +23,9 @@ jobs:
       - image: govau/cf-cli
     steps:
       - checkout
+      - run:
+          name: Add date meta data
+          command: bash meta-date.sh
       - run:
           name: Deploying to cloud.gov.au
           command: |
