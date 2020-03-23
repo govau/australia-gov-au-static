@@ -22,6 +22,8 @@ then
 
   sed -i '' "s@<!--TIME_META-->@$META_TAG@" site/public/index.html
   sed -i '' "s@<!--LAST_UPDATED_TAG-->@$DATE_TAG@" site/public/index.html
-#
+
+else
+  echo "Content has not been changed, time data update not required."
 fi
 
