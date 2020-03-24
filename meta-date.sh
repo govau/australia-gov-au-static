@@ -14,7 +14,7 @@ META_TAG="<meta property="\"og:updated_time\"" content="\"$CONTENT_COMMIT_DATE\"
 # Generate HTML tag
 DATE_TAG="<p>Updated: $DATE_TEXT<p>"
 
-# sed -i "s@<!--TIME_META-->@$META_TAG@" $INDEX_PAGE
-# sed -i "s@<!--LAST_UPDATED_TAG-->@$DATE_TAG@" $INDEX_PAGE
+sed -i "s@<!--TIME_META-->@$META_TAG@" $INDEX_PAGE
+sed -i "s@<!--LAST_UPDATED_TAG-->@$DATE_TAG@" $INDEX_PAGE
 
 echo "Last content update time: $DATE_TEXT"
