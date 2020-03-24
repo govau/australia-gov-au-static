@@ -17,4 +17,4 @@ DATE_TAG="<p>Updated: $DATE_TEXT<p>"
 # sed -i "s@<!--TIME_META-->@$META_TAG@" $INDEX_PAGE
 # sed -i "s@<!--LAST_UPDATED_TAG-->@$DATE_TAG@" $INDEX_PAGE
 
-echo "Last update time: $DATE_TEXT"
+echo "Last content update time: $DATE_TEXT"
