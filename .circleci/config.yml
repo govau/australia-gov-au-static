@@ -1,10 +1,31 @@
 version: 2
 jobs:
+  test:
+    docker:
+      - image: circleci/python:3
+        environment:
+          TZ: "Australia/Sydney"
+    steps:
+      - checkout
+      - run:
+          name: Add date meta data
+          command: bash meta-date.sh
+      - run:
+          name: Install test dependencies
+          command: pip3 install BeautifulSoup4
+      - run:
+          name: Test carousel
+          command: python3 validate-carousels.py
   deploy-staging:
     docker:
       - image: govau/cf-cli
+        environment:
+          TZ: "Australia/Sydney"
     steps:
       - checkout
+      - run:
+          name: Add date meta data
+          command: bash meta-date.sh
       - run:
           name: Deploying to cloud.gov.au
           command: |
@@ -18,8 +39,13 @@ jobs:
   deploy-prod:
     docker:
       - image: govau/cf-cli
+        environment:
+          TZ: "Australia/Sydney"
     steps:
       - checkout
+      - run:
+          name: Add date meta data
+          command: bash meta-date.sh
       - run:
           name: Deploying to cloud.gov.au
           command: |
@@ -34,12 +60,12 @@ workflows:
   version: 2
   deploy:
     jobs:
+      - test
       - deploy-staging:
           filters:
             branches:
               only:
                 - develop
-                - /infoupdate\/.*/
       - deploy-prod:
           filters:
             branches:
