@@ -5,6 +5,7 @@ jobs:
       - image: circleci/python:3
         environment:
           TZ: "Australia/Sydney"
+    working_directory: ~/ausgov
     steps:
       - checkout
       - run:
@@ -16,13 +17,22 @@ jobs:
       - run:
           name: Test carousel
           command: python3 validate-carousels.py
+      - persist_to_workspace:
+          root: ~/ausgov
+          paths:
+            - site/
+            - config/
+            - deploy.sh
+            - download.sh
+            - purge-cache.sh
   deploy-staging:
     docker:
       - image: govau/cf-cli
         environment:
           TZ: "Australia/Sydney"
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/ausgov
       - run:
           name: Add date meta data
           command: bash meta-date.sh
@@ -42,7 +52,8 @@ jobs:
         environment:
           TZ: "Australia/Sydney"
     steps:
-      - checkout
+      - attach_workspace:
+          at: ~/ausgov
       - run:
           name: Add date meta data
           command: bash meta-date.sh
@@ -62,11 +73,15 @@ workflows:
     jobs:
       - test
       - deploy-staging:
+          requires:
+            - test
           filters:
             branches:
               only:
                 - develop
       - deploy-prod:
+          requires:
+            - test
           filters:
             branches:
               only:
