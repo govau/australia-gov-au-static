@@ -3,6 +3,8 @@ jobs:
   test:
     docker:
       - image: circleci/python:3
+        environment:
+          TZ: "Australia/Sydney"
     steps:
       - checkout
       - run:
@@ -17,6 +19,8 @@ jobs:
   deploy-staging:
     docker:
       - image: govau/cf-cli
+        environment:
+          TZ: "Australia/Sydney"
     steps:
       - checkout
       - run:
@@ -35,6 +39,8 @@ jobs:
   deploy-prod:
     docker:
       - image: govau/cf-cli
+        environment:
+          TZ: "Australia/Sydney"
     steps:
       - checkout
       - run:
