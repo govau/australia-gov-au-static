@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Add date meta data
+          command: bash meta-date.sh
+      - run:
           name: Install test dependencies
           command: pip3 install BeautifulSoup4
       - run:
