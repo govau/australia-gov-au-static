@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="17px" viewBox="0 0 22 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Youtube-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 26 0 26 21.2195122 0 21.2195122"></polygon>
+    </defs>
+    <g id="01-Public" stroke="none" stroke-width="1" fill="#000" fill-rule="evenodd" opacity="0.9">
+        <g id="D-01-00-SA_Home-page" transform="translate(-1137.000000, -3563.000000)">
+            <g id="Global-/-Footer-/-Desktop" transform="translate(0.000000, 3426.000000)">
+                <g id="Footer">
+                    <g>
+                        <g id="Row" transform="translate(535.000000, 55.000000)">
+                            <g id="Footer_collumn-Copy">
+                                <g id="Group-12" transform="translate(600.000000, 0.000000)">
+                                    <g id="Icons" transform="translate(0.000000, 32.385681)">
+                                        <g id="Youtube-icon" transform="translate(0.000000, 47.000000)">
+                                            <g transform="translate(0.000000, 0.449501)">
+                                                <g id="Clip-2"></g>
+                                                <path d="M10.7804878,13.9756098 L10.7804878,7.3902439 L16.6341463,10.6830527 L10.7804878,13.9756098 Z M23.4924889,5.39942762 C23.2400499,4.45492329 22.4962029,3.7111664 21.5518016,3.45874508 C19.8399806,3 12.9756098,3 12.9756098,3 C12.9756098,3 6.11123891,3 4.39941796,3.45874508 C3.45501663,3.7111664 2.71116962,4.45492329 2.4587306,5.39942762 C2,7.11123328 2,10.6829268 2,10.6829268 C2,10.6829268 2,14.2544965 2.4587306,15.966426 C2.71116962,16.9109304 3.45501663,17.6546873 4.39941796,17.9072325 C6.11123891,18.3658537 12.9756098,18.3658537 12.9756098,18.3658537 C12.9756098,18.3658537 19.8399806,18.3658537 21.5518016,17.9072325 C22.4962029,17.6546873 23.2400499,16.9109304 23.4924889,15.966426 C23.9512195,14.2544965 23.9512195,10.6829268 23.9512195,10.6829268 C23.9512195,10.6829268 23.9512195,7.11123328 23.4924889,5.39942762 L23.4924889,5.39942762 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
