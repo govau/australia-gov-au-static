@@ -1,0 +1,38 @@
+.social-list li {
+  list-style-type: none;
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+}
+
+.social-list li + li {
+  margin-left: 10px;
+}
+
+.social-list {
+  padding-left: 0;
+}
+
+.social-list img {
+  padding: 3px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+a:focus {
+  outline: 3px solid #9263DE !important;
+  outline-offset: 2px !important;
+}
+
+a::-moz-focus-inner {
+  border: 0;
+}
