@@ -1,6 +1,8 @@
 .social-list li {
   list-style-type: none;
   display: inline-block;
+  height: 45px;
+  width: 45px;
 }
 
 .social-list li + li {
@@ -11,10 +13,8 @@
   padding-left: 0;
 }
 
-
-.social-media {
-  margin-top: 24px;
-  margin-top: 1.5rem;
+.social-list img {
+  padding: 3px;
 }
 
 .sr-only {
