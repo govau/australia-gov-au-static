@@ -58,6 +58,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
 		<link href="homepage-resources/main.css" media="all" rel="stylesheet" type="text/css" />
+		<link href="homepage-resources/style.css" media="all" rel="stylesheet" type="text/css" />
 		<!--[if lt IE 9]>
 			<script src="/profiles/gsecms/themes/ausgovau_bootstrap/javascripts/vendor/html5shiv.min.js"></script>
 		<![endif]-->
@@ -85,15 +86,25 @@
 				<a href="/" class="site-logo" aria-label="Go to Australia.gov.au homepage">
 					<img src="homepage-resources/resources/aus-gov-stacked-white.svg" alt="Australian Government - Coat of Arms" />
 				</a>
-			</div>
+      </div>
 		</header>
 
 		<main id="main">
 			<div class="hero-banner">
 				<div class="l-padding">
 					<h1>Coronavirus (COVID&#8209;19)</h1>
-					<p>This site is regularly updated to give you the latest Coronavirus news, updates and advice from government agencies across Australia.</p>
-				</div>
+          <p>This site is regularly updated to give you the latest Coronavirus news, updates and advice from government agencies across Australia.</p>
+
+        <div class="social-media">
+          <ul class="social-list">
+            <li><a href="https://www.linkedin.com/company/the-australian-government/" ><img src="homepage-resources/resources/linkedin.svg" alt="" /><span class="sr-only">Linked in</span></a></li>
+            <li><a href="https://twitter.com/ausgov" ><img src="homepage-resources/resources/twitter.svg" alt="" /><span class="sr-only"> Twitter</span></a></li>
+            <li><a href="https://www.facebook.com/ausgov"><img src="homepage-resources/resources/FB.svg" alt="" /><span class="sr-only">Facebook</span></a></li>
+            <li><a href="https://www.youtube.com/watch?v=pnG23jkg7xg&feature=youtu.be" ><img src="homepage-resources/resources/youtube-icon.svg" alt="" /><span class="sr-only">Youtube</span></a></li>
+            <li><a href="https://www.instagram.com/ausgov"><img src="homepage-resources/resources/instagram.svg" alt="" /><span class="sr-only">Instagram</span></a></li>
+          </ul>
+        </div>
+      </div>
 			</div>
 
 			<div class="l-container bg-grey">
@@ -101,7 +112,7 @@
 					<div class="styled-list">
 
 						<h2>Essential information</h2>
-            <p>Updated: 2:00pm AEDT on Wednesday, 25 March 2020</p>
+            <p>Updated: 4:30pm AEDT on Wednesday, 25 March 2020</p>
 						<ul>
 
               <li>The Australian Government has begun sending text messages to keep you informed about the national response to COVID-19. Please act on that advice, it will help save lives.</li>
@@ -110,7 +121,7 @@
 
 	<li>Pubs, licensed clubs and hotels (excluding accommodation), places of worship, gyms, indoor sporting venues, cinemas, casinos must close. Takeaway only at restaurants and cafes. Supermarkets, and pharmacies remain open. <a href="https://www.pm.gov.au/media/update-coronavirus-measures-220320">Read more</a></li>
 
-  <li>Tasmania, the NT, WA, Queensland and SA announced border closures. Anyone entering is to self-isolate for 14 days. See specific State and Territory Government sites for information.</li>
+  <li>Tasmania, the NT, WA, Queensland and SA announced border closures. Anyone entering is to self-isolate for 14 days. See specific <a href ="#state-government"> State and Territory Government sites</a> for information.</li>
 
 	<li>JobSeeker Payment claims can be submitted online 24/7. Online service capacity is being increased. <a href="https://www.servicesaustralia.gov.au/individuals/services/centrelink/jobseeker-payment">Read More.</a></li>
 
@@ -139,8 +150,8 @@
 					{"title":"$189 billion economic response","description":"More economic help for businesses and individuals.","imgUrl":"homepage-resources/resources/stimulus-package.jpg","linkUrl":"https://coronavirus.treasury.gov.au"},
 
 
-					
-					{"title":"Public gatherings and vulnerable groups","description":"Latest limits on organised gatherings and visits to vulnerable groups.","imgUrl":"homepage-resources/resources/public-gatherings-and-vulnerable-groups.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/limits-on-public-gatherings-for-coronavirus-covid-19"},
+
+					{"title":"Limits on public gatherings","description":"Help slow the spread by avoiding large groups.","imgUrl":"homepage-resources/resources/public-gatherings-and-vulnerable-groups.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/limits-on-public-gatherings-for-coronavirus-covid-19"},
 
 					{"title":"Government updates","description":"Read the latest updates from the Prime Minister on Coronavirus measures.","imgUrl":"homepage-resources/resources/government-updates.jpg","linkUrl":"https://www.pm.gov.au/media"}
 
@@ -234,7 +245,7 @@
       <!-- Carousel 4 -->
       <div class="l-container bg-grey">
         <div class="l-padding centre-align">
-          <h2>State Government information</h2>
+          <h2 id = "state-government">State Government information</a></h2>
         </div>
         <div
           data-component="rc-most-viewed-carousel"
