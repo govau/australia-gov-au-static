@@ -34,7 +34,7 @@ carousels.forEach( function ( carousel, i ) {
 
     card.addEventListener( 'mouseup', function ( e ) {
 
-      //detect middle and right click only
+      //detect middle and left click only
       if( e.button === 0 || e.button === 1 ){
         dataLayer.push({
           event: 'carousel_card_click',
