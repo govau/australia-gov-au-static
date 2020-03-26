@@ -26,7 +26,7 @@
 		<meta property="og:site_name" content="Australia.gov.au" />
 		<meta property="og:image" content="homepage-resources/header-logo-agov--dark.png" />
     <meta property="og:description" content=" Information, advice and services for Australians dealing with Coronavirus (COVID-19)." />
-    <!--TIME_META-->
+    <meta property="og:updated_time" content="2020-03-26T15:25:54+11:00" />
 
     <!--FAVICONS-->
     <link rel="apple-touch-icon" sizes="180x180" href="homepage-resources/favicon/apple-touch-icon.png">
@@ -112,12 +112,12 @@
 					<div class="styled-list">
 
 						<h2>Essential information</h2>
-            <p>Updated: 9:30am AEDT on Thursday, 26 March 2020</p>
+            <p>Updated: 3:25pm AEDT on Thursday, 26 March 2020</p>
 						<ul>
 
-	<li>Tighter restrictions on weddings, funerals, fitness classes, beauty salons, arcades, play centres and other public spaces are now in place. <a href="https://www.pm.gov.au/media/update-coronavirus-measures-24-March-2020">Read more.</a></li>
+	<li>Tighter restrictions on weddings, funerals, fitness classes, beauty salons, arcades, play centres and other public spaces are now in place.</li>
 
-	<li>Pubs, licensed clubs and hotels (excluding accommodation), places of worship, gyms, indoor sporting venues, cinemas, casinos must close. Takeaway only at restaurants and cafes. Supermarkets, and pharmacies remain open. <a href="https://www.pm.gov.au/media/update-coronavirus-measures-220320">Read more</a></li>
+	<li>Pubs, licensed clubs and hotels (excluding accommodation), places of worship, gyms, indoor sporting venues, cinemas, casinos must close. Takeaway only at restaurants and cafes. Supermarkets and pharmacies remain open.</li>
 
   <li>Tasmania, the NT, WA, Queensland and SA announced border closures. Anyone entering is to self-isolate for 14 days. See specific <a href ="#state-government"> State and Territory Government sites</a> for information.</li>
 
@@ -134,13 +134,15 @@
 			</div>
 
 			<!-- Carousel 1 -->
-			<div class="l-container">
+			<div class="l-container" id="key-updates-carousel">
 				<div class="l-padding centre-align">
 					<h2>Key updates</h2>
 				</div>
-				<div
+        <div
 					data-component="rc-latest-updates-carousel"
 					data-props='{"slides":[{"title":"Check your symptoms online","description":"Answer a few questions to see if you need medical help.","imgUrl":"homepage-resources/resources/check-your-symptoms-online.jpg","linkUrl":"https://www.healthdirect.gov.au/symptom-checker/tool?symptom=CORO"},
+
+					{"title":"Protect those at risk","description":"What you can do to reduce the risk for the elderly and unwell.","imgUrl":"homepage-resources/resources/public-gatherings-and-vulnerable-groups.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/advice-for-people-at-risk-of-coronavirus-covid-19"},
 
 					{"title":"Understanding the facts","description":"Read the latest facts and information on Coronavirus.","imgUrl":"homepage-resources/resources/mythbusting.jpg","linkUrl":"https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public/myth-busters"},
 
@@ -149,7 +151,7 @@
 
 
 
-					{"title":"Limits on public gatherings","description":"Help slow the spread by avoiding large groups.","imgUrl":"homepage-resources/resources/public-gatherings-and-vulnerable-groups.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/limits-on-public-gatherings-for-coronavirus-covid-19"},
+					{"title":"Limits on public gatherings","description":"Help slow the spread by avoiding large groups.","imgUrl":"homepage-resources/resources/public-gatherings.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/limits-on-public-gatherings-for-coronavirus-covid-19"},
 
 					{"title":"Government updates","description":"Read the latest updates from the Prime Minister on Coronavirus measures.","imgUrl":"homepage-resources/resources/government-updates.jpg","linkUrl":"https://www.pm.gov.au/media"}
 
@@ -158,7 +160,7 @@
 			</div>
 
 			<!-- Carousel 2 -->
-			<div class="l-container bg-grey">
+			<div class="l-container bg-grey" id="health-and-prevention-carousel">
 				<div class="l-padding centre-align">
 					<h2>Health and prevention</h2>
 				</div>
@@ -169,23 +171,36 @@
 				"description":"The Department of Health has released a video campaign to help you stay informed",
 				"imgUrl":"homepage-resources/resources/self-isolation.jpg","linkUrl":"https://www.youtube.com/user/healthgovau"
 				},
-				{"title":"Protecting yourself and others","description":"Stop the spread. Follow the latest advice.","imgUrl":"homepage-resources/resources/protecting-yourself-and-others.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19"},
+        {"title":"Protecting yourself and others",
+        "description":"Stop the spread. Follow the latest advice.",
+        "imgUrl":"homepage-resources/resources/protecting-yourself-and-others.jpg",
+        "linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19"},
 
-				{"title":"Getting tested","description":"Find out who can be tested and when they should get tested.","imgUrl":"homepage-resources/resources/getting-tested.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert#symptoms-and-when-to-get-tested"},
+        {"title":"Getting tested",
+        "description":"Find out who can be tested and when they should get tested.",
+        "imgUrl":"homepage-resources/resources/getting-tested.jpg",
+        "linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/what-you-need-to-know-about-coronavirus-covid-19#testing "},
 
-				{"title":"Social distancing","description":"Reduce your risk of exposure through social distancing.","imgUrl":"homepage-resources/resources/social-distancing.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/social-distancing-for-coronavirus-covid-19"},
+        {"title":"Social distancing",
+        "description":"Reduce your risk of exposure through social distancing.",
+        "imgUrl":"homepage-resources/resources/social-distancing.jpg",
+        "linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/social-distancing-for-coronavirus-covid-19"},
 
-				{"title":"Medical protective equipment","description":"Supporting domestic production of essential items.","imgUrl":"homepage-resources/resources/medical-equipment.jpg","linkUrl":"https://www.minister.industry.gov.au/ministers/karenandrews/media-releases/increasing-domestic-manufacturing-during-covid-19"},
+        {"title":"Medical protective equipment",
+        "description":"Supporting domestic production of essential items.",
+        "imgUrl":"homepage-resources/resources/medical-equipment.jpg",
+        "linkUrl":"https://www.minister.industry.gov.au/ministers/karenandrews/media-releases/increasing-domestic-manufacturing-during-covid-19"},
 
 				{"title":"Self-isolation",
 				"description":"Advice and information for people who are self-isolating.",
-				"imgUrl":"homepage-resources/resources/self-isolation.jpg","linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/self-isolation-self-quarantine-for-coronavirus-covid-19"}]}'
+        "imgUrl":"homepage-resources/resources/self-isolation.jpg",
+        "linkUrl":"https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/how-to-protect-yourself-and-others-from-coronavirus-covid-19/self-isolation-self-quarantine-for-coronavirus-covid-19"}]}'
 						></div>
 			</div>
 
 
       	<!-- Carousel 3 -->
-			<div class="l-container">
+			<div class="l-container" id="supporting-the-community-carousel">
 				<div class="l-padding centre-align">
 					<h2>Supporting the community</h2>
 				</div>
@@ -226,14 +241,6 @@
             "title":"Support for domestic violence",
           "description":"Reach out to 1800Respect for advice and support with domestic violence during this time.",
           "linkUrl":"https://www.1800respect.org.au"
-        },
-        {"title":"Scam messages",
-        "description":"How to identify a Coronavirus scam text message.",
-        "linkUrl":"https://www.staysmartonline.gov.au/alert-service/covid-19-scam-messages-targeting-australians"},
-          {
-            "title":"Government payments and services",
-            "description":"Information about social welfare payments and other assistance.",
-            "linkUrl":"https://www.servicesaustralia.gov.au/individuals/subjects/affected-coronavirus-covid-19"
         }]
         }'
 				></div>
@@ -241,9 +248,9 @@
 
 
       <!-- Carousel 4 -->
-      <div class="l-container bg-grey">
+      <div class="l-container bg-grey" id="state-and-territory-government-carousel">
         <div class="l-padding centre-align">
-          <h2 id = "state-government">State Government information</a></h2>
+          <h2 id = "state-government">State and Territory Government information</a></h2>
         </div>
         <div
           data-component="rc-most-viewed-carousel"
@@ -285,21 +292,20 @@
       </div>
 
 			<!-- Carousel 5 -->
-			<div class="l-container">
+			<div class="l-container" id="information-travellers-carousel">
 				<div class="l-padding centre-align">
 					<h2>Information for travellers</h2>
 				</div>
 				<div
 					data-component="rc-most-viewed-carousel"
           data-props='{"slides":[
-          {"title":"Australians overseas",
-          "description":"View advice or call +61 2 6261 3305 for urgent consular assistance.",
-          "imgUrl":"homepage-resources/resources/travellers-1.svg",
-		  "linkUrl":"https://www.smartraveller.gov.au/news-and-updates/coronavirus-covid-19"},
-
-          {"title":"Travel bans and restrictions",
-          "description":"View the country by country break down.",
+          {"title":"24-hour consular emergency assistance",
+          "description":"Call +61 2 6261 3305 from overseas or 1300 555 135 from Australia.",
           "imgUrl":"homepage-resources/resources/travellers-2.svg",
+      "linkUrl":"https://www.smartraveller.gov.au/news-and-updates/coronavirus-covid-19"},
+      {"title":"Travel bans and restrictions",
+          "description":"An overseas travel ban is in place for all Australians.",
+          "imgUrl":"homepage-resources/resources/travellers-1.svg",
 		  "linkUrl":"https://www.smartraveller.gov.au/crisis/covid-19-and-travel"},
 
           {"title":"Australians returning from overseas",
@@ -318,7 +324,7 @@
 
 
 			<!-- Carousel 6 -->
-			<div class="l-container bg-grey">
+			<div class="l-container bg-grey" id="financial-support-carousel">
 				<div class="l-padding centre-align">
 					<h2>Receiving financial support</h2>
 				</div>
@@ -335,7 +341,7 @@
 "linkUrl":"https://www.servicesaustralia.gov.au/individuals/subjects/affected-coronavirus-covid-19/people-who-dont-get-payment-from-us-coronavirus-covid-19"},
 {"title":"Job-seekers affected by self-isolation",
 "description":"Information for people seeking employment during isolation.",
-"linkUrl":"https://www.servicesaustralia.gov.au/individuals/subjects/affected-coronavirus-covid-19/job-seekers-and-coronavirus-covid-19"},
+"linkUrl":"https://www.servicesaustralia.gov.au/individuals/subjects/how-register-your-intention-claim-centrelink-payment-coronavirus-covid-19"},
 {"title":"Economic response to Coronavirus",
 "description":"Read about the $17.6 billion announced to protect the economy.",
 "linkUrl":"https://treasury.gov.au/coronavirus"},
@@ -346,7 +352,7 @@
 			</div>
 
 			<!-- Carousel 7 -->
-			<div class="l-container">
+			<div class="l-container" id="education-providers-carousel">
 				<div class="l-padding centre-align">
 					<h2>Information for education providers</h2>
 				</div>
@@ -365,7 +371,7 @@
 			</div>
 
 			<!-- Carousel 8 -->
-			<div class="l-container bg-grey">
+			<div class="l-container bg-grey" id="businesses-and-employees-carousel">
 				<div class="l-padding centre-align">
 					<h2>Information for businesses and employees</h2>
 				</div>
@@ -451,5 +457,6 @@
 		</footer>
 
 		<script src="homepage-resources/main.bundle.js"></script>
+		<script src="homepage-resources/anchor.js"></script>
 	</body>
 </html>
