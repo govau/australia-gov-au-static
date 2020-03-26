@@ -36,3 +36,61 @@ a:focus {
 a::-moz-focus-inner {
   border: 0;
 }
+
+/**
+ * Icons CSS
+ * https://github.com/govau/design-system-site/blob/master/src/sass/components/_icons.scss
+ */
+
+.anchor:before {
+  content: "​";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.anchor:hover .icon {
+  visibility: visible;
+}
+.anchor .icon {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  visibility: hidden;
+  margin-top: -0.75rem;
+  margin-left: -1.875rem;
+}
+.anchor .icon:hover {
+  visibility: visible;
+}
+.ie8 .anchor .icon {
+  margin-left: 0;
+}
+.anchor .icon:before {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon:before,
+.icon--right:after {
+  width: 1.25em;
+  height: 1.25em;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  content: " ";
+  background-repeat: no-repeat;
+  margin-top: -2px;
+}
+.lt-ie9 .icon:before,
+.lt-ie9 .icon--right:after {
+  display: none;
+}
+
+.icon:before {
+  margin-right: 8px;
+  margin-right: 0.5rem;
+}
+
+.icon--link:before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath fill='%23007099' d='M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z'/%3E%3C/svg%3E");
+}
