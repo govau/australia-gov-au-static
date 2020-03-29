@@ -24,25 +24,16 @@
 
 @media only screen and (max-width: 1024px) {
   .social-list {
-    margin-left: -8px;
-  }
-}
-
-  .social-list img {
-    height: 22px;
-    width: 22px;
-    position: absolute;
-    left: 11px;
-    top: 11px;
+    margin-left: -9px;
   }
 }
 
 .social-list img {
-  height: 28px;
-  width: 28px;
+  height: 26px;
+  width: 26px;
   position: absolute;
-  left: 8px;
-  top: 8px;
+  left: 9px;
+  top: 9px;
 }
 
 @media only screen and (max-width: 492px) {
