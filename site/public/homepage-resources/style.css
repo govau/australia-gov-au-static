@@ -56,11 +56,11 @@
   }
 
   .social-list img {
-    height: 22px;
-    width: 22px;
+    height: 26px;
+    width: 26px;
     position: absolute;
-    left: 11px;
-    top: 11px;
+    left: 9px;
+    top: 9px;
   }
 }
 
