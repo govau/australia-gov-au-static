@@ -147,14 +147,22 @@ a::-moz-focus-inner {
   font-weight: 400;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 600px) {
   .footer-top-links {
     flex-basis: 100% !important;
   }
 }
 
+.footer-top-links ul {
+  height: 180px !important;
+}
 
-@media only screen and (max-width: 760px) {
+.footer-top-links ul li {
+  max-width: 22rem;
+}
+
+
+@media only screen and (max-width: 600px) {
   .footer-top-links ul {
     height: auto !important;
   }
