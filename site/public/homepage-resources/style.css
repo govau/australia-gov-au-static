@@ -20,6 +20,7 @@
 
 .social-list {
   padding-left: 0;
+  margin-top: 20px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -168,3 +169,8 @@ a::-moz-focus-inner {
   }
 }
 
+@media only screen and (min-width: 64em) {
+  .hero-banner p + p {
+    margin-top: 20px;
+  }
+}
