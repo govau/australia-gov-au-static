@@ -59,6 +59,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
 		<link href="../homepage-resources/style.css" media="all" rel="stylesheet" type="text/css" />
+		<!-- <link href="../homepage-resources/main.css" media="all" rel="stylesheet" type="text/css" /> -->
 		<link href="../homepage-resources/essential.css" media="all" rel="stylesheet" type="text/css" />
 		<link href="../homepage-resources/auds.css" media="all" rel="stylesheet" type="text/css" />
 		<!--[if lt IE 9]>
@@ -73,23 +74,35 @@
 			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKZK44Z"
 				height="0" width="0" style="display: none; visibility: hidden;"></iframe>
 			</noscript>
-		<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
 
+    <nav class="au-skip-link" aria-label="skip links navigation">
+      <a class="au-skip-link__link" href="#main">Skip to main content</a>
+    </nav>
     <header class="au-header au-header--dark" role="banner">
+      <div id="sitewide-alert" class="sitewide-alert is-active" aria-hidden="false">
+        <i class="info"></i>
+       <p> Self-isolated? Tested for COVID-19? &nbsp; <a href="https://covid-form.service.gov.au/">Report Now</a></p>
+      </div>
+
+        <div class="logo">
+          <a href="/"><img class="au-header__brand-image" alt="Insert alternate text here" src="../homepage-resources/resources/aus-gov-stacked-white.svg"></a>
+        </div>
+        <div class="heading">
+          <h1 class="au-header__heading">Health alert: Novel coronavirus (COVID-19)</h1>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12">
             <a class="au-header__brand" href="/">
               <img class="au-header__brand-image" alt="Insert alternate text here" src="../homepage-resources/resources/aus-gov-stacked-white.svg">
-              
+
             </a>
           </div>
           <!-- <div class="col-md-3">Extras</div> -->
         </div>
-      </div>
     </header>
 
-		<main class="container-fluid au-body">
+		<main class="container-fluid au-body" id="main">
 
       <nav class="au-breadcrumbs" aria-label="breadcrumb">
         <ul class="au-link-list au-link-list--inline">
@@ -106,7 +119,7 @@
         <ul class="essential-information__list">
           <li>The Government has launched a new Jobs Hub to help Australians find work during the Coronavirus pandemic, advertising the latest vacancies from businesses across Australia. <a href="https://www.dese.gov.au/covid-19/jobs-hub">Read more</a>.</li>
         </ul>
-        
+
         <h2>Tuesday, 31 March, 2020</h2>
         <ul class="essential-information__list">
           <li>The Government has announced a $130 billion JobKeeper Payment to keep more Australians in jobs and support businesses affected by the Coronavirus. <a href="https://treasury.gov.au/coronavirus/jobkeeper">Read more</a>.</li>
