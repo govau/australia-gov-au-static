@@ -76,7 +76,7 @@ def check_html_file(file_path):
 if __name__ == "__main__":
 	files_to_check = [
 		'index.html',
-		'archive/index.html'
+		'covid19archive/index.html'
 	]
 	for file_path in files_to_check:
 		check_html_file(file_path)
