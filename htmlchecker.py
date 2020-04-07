@@ -10,7 +10,8 @@ checked_links = []
 if os.path.exists("checked_links.json"):
 	checked_links = json.load(open("checked_links.json", "r"))
 
-def check_url(address):
+
+def _check_url(address):
 	if address in checked_links:
 		return
 	if "linkedin.com" in address:
@@ -29,40 +30,53 @@ def check_url(address):
 		else:
 			print("no problem in link --> " + address)
 			checked_links.append(address)
-			json.dump(checked_links, open("checked_links.json","w"))
+			json.dump(checked_links, open("checked_links.json", "w"))
 	except urllib.error.HTTPError as e:
 		raise Exception(address + " --> " + str(e) + str(e.headers))
 
 
-def has_data_props(tag):
+def _has_data_props(tag):
 	return tag.has_attr('data-props')
 
 
-file_root = "./site/public/"
-soup = BeautifulSoup(open(os.path.join(file_root, 'index.html')), features="html.parser")
+def check_html_file(file_path):
+	print("Checking: " + file_path)
+	global checked_links
+	file_root = "./site/public/"
+	soup = BeautifulSoup(open(os.path.join(file_root, file_path)), features="html.parser")
 
-carousels_count = 0
-for tag in soup.find_all(has_data_props):
-	carousels_count += 1
-	carousel_name = tag.parent.find('h2').text
-	print(carousel_name)
-	slides = json.loads(tag['data-props']).get('slides', [])
-	if len(slides) == 0:
-		raise Exception("Empty carousel:", carousel_name)
-	print(len(slides), "items in carousel:", carousel_name)
-	print(slides)
-	for slide in slides:
-		if 'imgUrl' in slide:
-			if not os.path.isfile(os.path.join(file_root, slide.get('imgUrl'))):
-				raise Exception("File", slide.get('imgUrl'), "does not exist in carousel:", carousel_name)
-		if 'linkUrl' in slide:
-			validUrl = validators.url(slide.get('linkUrl'))
-			if not validUrl:
-				print(validUrl)
-				raise Exception("Link", slide.get('linkUrl'), "is invalid in carousel:", carousel_name)
-			check_url(slide.get('linkUrl'))
-if carousels_count == 0:
-	raise Exception("No carousels")
-for link in soup.find_all('a'):
-	if "http" in link['href']:
-		check_url(link['href'])
+	carousels_count = 0
+	for tag in soup.find_all(_has_data_props):
+		carousels_count += 1
+		carousel_name = tag.parent.find('h2').text
+		print(carousel_name)
+		slides = json.loads(tag['data-props']).get('slides', [])
+		if len(slides) == 0:
+			raise Exception("Empty carousel:", carousel_name)
+		print(len(slides), "items in carousel:", carousel_name)
+		print(slides)
+		for slide in slides:
+			if 'imgUrl' in slide:
+				if not os.path.isfile(os.path.join(file_root, slide.get('imgUrl'))):
+					raise Exception("File", slide.get('imgUrl'), "does not exist in carousel:", carousel_name)
+			if 'linkUrl' in slide:
+				validUrl = validators.url(slide.get('linkUrl'))
+				if not validUrl:
+					print(validUrl)
+					raise Exception("Link", slide.get('linkUrl'), "is invalid in carousel:", carousel_name)
+				_check_url(slide.get('linkUrl'))
+	link_count = 0
+	for link in soup.find_all('a'):
+		if "http" in link['href']:
+			link_count += 1
+			_check_url(link['href'])
+	print(str(link_count) + " external links in: " + file_path)
+
+
+if __name__ == "__main__":
+	files_to_check = [
+		'index.html',
+		'covid19archive/index.html'
+	]
+	for file_path in files_to_check:
+		check_html_file(file_path)
