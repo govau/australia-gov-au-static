@@ -180,32 +180,11 @@ main  {
   }
 }
 
-.au-header .logo,
-.au-header .heading {
-  text-align: center;
-}
-
 .au-header .logo {
-  background: #000;
+
   padding: 24px 0;
 }
 .au-header.au-header--dark {
   padding: 0;
-}
-
-.au-header .heading {
-  padding: 48px 0;
-}
-
-@media (max-width:792px) {
-
-.au-header .logo {
-    text-align: left;
-    padding: 24px 32px;
-}
-.au-header .heading {
-  text-align: left;
-  padding: 32px 32px;
-}
-
+  background: #000 !important;
 }
