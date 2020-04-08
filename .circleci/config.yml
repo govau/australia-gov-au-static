@@ -118,6 +118,7 @@ workflows:
               ignore:
                 - develop
                 - master
+                - /.*no-preview/
       - deploy-staging:
           filters:
             branches:
