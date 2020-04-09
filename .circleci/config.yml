@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  slack: circleci/slack@3.4.2
 jobs:
   test:
     docker:
@@ -23,9 +25,9 @@ jobs:
           key: v1-cache-{{ checksum "checked_links.json" }}
           paths:
             - ./checked_links.json
-  deploy-staging:
+  deploy-preview:
     docker:
-      - image: govau/cf-cli
+      - image: circleci/python:3
         environment:
           TZ: "Australia/Sydney"
     steps:
@@ -34,7 +36,45 @@ jobs:
           name: Add date meta data
           command: bash meta-date.sh
       - run:
-          name: Deploying to cloud.gov.au
+          name: Install Cloud Foundry CLI
+          command: |
+            curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+            sudo dpkg -i cf-cli_amd64.deb
+            cf -v
+      - run:
+          name: Deploying to cloud.gov.au (preview)
+          command: bash preview-deploy.sh
+  undeploy-previews:
+    docker:
+      - image: circleci/python:3
+        environment:
+          TZ: "Australia/Sydney"
+    steps:
+      - checkout
+      - run:
+          name: Install Cloud Foundry CLI
+          command: |
+            curl -v -L -o cf-cli_amd64.deb 'https://cli.run.pivotal.io/stable?release=debian64&source=github'
+            sudo dpkg -i cf-cli_amd64.deb
+            cf -v
+      - run:
+          name: Cleanup preview deploys
+          command: bash cleanup-preview-deploys.sh
+  deploy-staging:
+    docker:
+      - image: govau/cf-cli
+        environment:
+          TZ: "Australia/Sydney"
+    steps:
+      - slack/notify:
+            channel: C010UPQBR0T
+            message: A content update of australia.gov.au is now being tested
+      - checkout
+      - run:
+          name: Add date meta data
+          command: bash meta-date.sh
+      - run:
+          name: Deploying to cloud.gov.au (dev/staging)
           command: |
             cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
             cp config/stag_manifest.yml site/manifest.yml
@@ -49,12 +89,15 @@ jobs:
         environment:
           TZ: "Australia/Sydney"
     steps:
+      - slack/notify:
+            channel: C010UPQBR0T
+            message: A content update of australia.gov.au is now being released
       - checkout
       - run:
           name: Add date meta data
           command: bash meta-date.sh
       - run:
-          name: Deploying to cloud.gov.au
+          name: Deploying to cloud.gov.au (prod)
           command: |
             cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
             cp config/prod_manifest.yml site/manifest.yml
@@ -63,16 +106,29 @@ jobs:
       - run:
           name: Purging Fastly cache
           command: bash purge-cache.sh $FASTLY_URL_PROD
+
 workflows:
   version: 2
   deploy:
     jobs:
       - test
+      - deploy-preview:
+          filters:
+            branches:
+              ignore:
+                - develop
+                - master
+                - /.*no-preview/
       - deploy-staging:
           filters:
             branches:
               only:
                 - develop
+      - undeploy-previews:
+          filters:
+            branches:
+              only:
+                - master
       - deploy-prod:
           filters:
             branches:
