@@ -9,5 +9,6 @@ set -o pipefail
 # Print shell input lines as they are read.
 set -v
 
-cf login -a $CF_API_PROD -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_PROD
+cf login -a $CF_API_STAGING -o $CF_ORG -s $CF_SPACE -u $CF_USERNAME -p $CF_PASSWORD_STAGING
+
 python3 undeploy_closed_branches.py

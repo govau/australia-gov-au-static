@@ -24,10 +24,16 @@ def _send_slack_data(slack_data):
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	parser.add_argument('--test', action='store_true')
+	parser.add_argument('--new_develop_deploy', nargs=1, type=str)
 	parser.add_argument('--new_preview', nargs=1, type=str)
 	args = parser.parse_args()
 	if args.test:
 		slack_data = {'text': "abcd"}
+		_send_slack_data(slack_data)
+	elif args.new_develop_deploy:
+		slack_data = {
+			'channel': args.new_develop_deploy[0],
+			'text': "A content update of australia.gov.au is now being tested - {}".format(os.environ.get('CIRCLE_PULL_REQUEST',''))}
 		_send_slack_data(slack_data)
 	elif args.new_preview:
 		slack_data = {
