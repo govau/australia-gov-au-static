@@ -31,6 +31,8 @@ def deployed_features():
 		capture_output=True
 	).stdout
 	apps = json.loads(apps_json)
+	if 'resources' not in apps:
+		print("No apps found in specified space ID, you may be logged into the wrong cloud environment!")
 	return [x['entity']['name'] for x in apps['resources']]
 
 

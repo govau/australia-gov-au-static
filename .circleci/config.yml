@@ -66,9 +66,6 @@ jobs:
         environment:
           TZ: "Australia/Sydney"
     steps:
-      - slack/notify:
-            channel: C010UPQBR0T
-            message: A content update of australia.gov.au is now being tested
       - checkout
       - run:
           name: Add date meta data
@@ -83,6 +80,9 @@ jobs:
       - run:
           name: Purging Fastly cache
           command: bash purge-cache.sh $FASTLY_URL_STAGING
+      - run:
+          name: Notify about develop deploys (release-* only)
+          command: bash notify_new_develop_deploy.sh
   deploy-prod:
     docker:
       - image: govau/cf-cli
