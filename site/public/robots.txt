@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /information-and-services/
+Disallow: /information-and-services
+Disallow: /news-and-social-media/
+Disallow: /news-and-social-media
+Disallow: /about-government/
+Disallow: /about-government
+Disallow: /content/
+Disallow: /directories/
+Disallow: /help-and-contact/
+Disallow: /misc/
