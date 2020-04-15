@@ -18,7 +18,7 @@ APPNAME=preview-ausgov-`basename $GITBRANCH`
 
 cf push $APPNAME -f manifest.yml
 
-python3 slack.py --new_preview $APPNAME
+python3 ../slack.py --new_preview $APPNAME
 
 # notify only if app wasn't already deployed
 #cd "../"
