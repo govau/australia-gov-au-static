@@ -12,15 +12,19 @@ cp config/stag_manifest.yml site/manifest.yml
 cd site
 GITBRANCH="$(git symbolic-ref --short -q HEAD)"
 APPNAME=preview-ausgov-`basename $GITBRANCH`
-cf app $APPNAME > /dev/null
-APP_NEW=$?
+# check if app already deployed
+#cf app $APPNAME > /dev/null
+#APP_NEW=$?
 
 cf push $APPNAME -f manifest.yml
 
-cd "../"
-if test $APP_NEW -eq 1 # ie. does NOT exist == 1 == true
-then
- python3 slack.py --new_preview $APPNAME
-else
-	echo "$APPNAME already existed so no need for slack notification"
-fi
+python3 slack.py --new_preview $APPNAME
+
+# notify only if app wasn't already deployed
+#cd "../"
+#if test $APP_NEW -eq 1 # ie. does NOT exist == 1 == true
+#then
+# python3 slack.py --new_preview $APPNAME
+#else
+#	echo "$APPNAME already existed so no need for slack notification"
+#fi
