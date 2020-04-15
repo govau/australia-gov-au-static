@@ -80,6 +80,13 @@ jobs:
       - run:
           name: Purging Fastly cache
           command: bash purge-cache.sh $FASTLY_URL_STAGING
+  notify-staging:
+    docker:
+      - image: circleci/python:3
+        environment:
+          TZ: "Australia/Sydney"
+    steps:
+      - checkout
       - run:
           name: Notify about develop deploys (release-* only)
           command: bash notify_new_develop_deploy.sh
@@ -121,6 +128,13 @@ workflows:
                 - /.*no-preview/
                 - /.*nopreview/
       - deploy-staging:
+          filters:
+            branches:
+              only:
+                - develop
+      - notify-staging:
+          requires:
+            - deploy-staging
           filters:
             branches:
               only:
