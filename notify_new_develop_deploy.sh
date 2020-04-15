@@ -6,9 +6,9 @@ set -o pipefail
 # Print shell input lines as they are read.
 set -v
 
-# see if last merge commit mentioned release-
-git log --oneline --merges develop | head -n1
-git log --oneline --merges develop | head -n1 | grep release-
+# see if last merge commit mentioned release- or r00- or r000-
+git log --oneline --merges origin/develop | head -n1
+git log --oneline --merges origin/develop | head -n1 | egrep "release-|r\d\d\d?-"
 
 LAST_MERGED_BRANCH_IS_NOT_RELEASE=$?
 if test $LAST_MERGED_BRANCH_IS_NOT_RELEASE -eq 1 # ie. does NOT match == 1 == true
