@@ -119,6 +119,7 @@ workflows:
                 - develop
                 - master
                 - /.*no-preview/
+                - /.*nopreview/
       - deploy-staging:
           filters:
             branches:
