@@ -80,25 +80,12 @@ jobs:
       - run:
           name: Purging Fastly cache
           command: bash purge-cache.sh $FASTLY_URL_STAGING
-  notify-staging:
-    docker:
-      - image: circleci/python:3
-        environment:
-          TZ: "Australia/Sydney"
-    steps:
-      - checkout
-      - run:
-          name: Notify about develop deploys (release-* only)
-          command: bash notify_new_develop_deploy.sh
   deploy-prod:
     docker:
       - image: govau/cf-cli
         environment:
           TZ: "Australia/Sydney"
     steps:
-      - slack/notify:
-            channel: C010UPQBR0T
-            message: A content update of australia.gov.au is now being released
       - checkout
       - run:
           name: Add date meta data
@@ -128,13 +115,6 @@ workflows:
                 - /.*no-preview/
                 - /.*nopreview/
       - deploy-staging:
-          filters:
-            branches:
-              only:
-                - develop
-      - notify-staging:
-          requires:
-            - deploy-staging
           filters:
             branches:
               only:
