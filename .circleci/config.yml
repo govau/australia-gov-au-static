@@ -105,15 +105,6 @@ workflows:
   version: 2
   deploy:
     jobs:
-      - test
-      - deploy-preview:
-          filters:
-            branches:
-              ignore:
-                - develop
-                - master
-                - /.*no-preview/
-                - /.*nopreview/
       - deploy-staging:
           filters:
             branches:
